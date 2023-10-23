@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(98deg, #ffe7d1 8%, #fff2e6 100%);
+}
+/*estilização da primeira página*/
+h1 {
+  color: #22212c;
+  font-family: "Merriweather Sans";
+}
+h2 {
+  color: #22212c;
+  font-size: 35px;
+  font-family: "Merriweather Sans";
+}
+/*estilização da menu é a mesma em todas as páginas*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ff9a3c;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100px;
+  margin-bottom: 4em;
+  gap: 1em;
+}
+
+.links {
+  display: flex;
+  flex-direction: block;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  margin: 0 5em 0 0;
+}
+
+.links > a {
+  text-decoration: none;
+  color: #22212c;
+  font-family: "Merriweather Sans";
+}
+.links > a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4em;
+}
+.perfil > a > img {
+  width: 9em;
+  height: 9em;
+  border-radius: 50%;
+  border: 4px solid #ff9a3c;
+  object-fit: cover;
+  margin-bottom: 0.75em;
+}
+.perfil > p {
+  font-size: 20px;
+}
+
+/*Uma pequena animação pra fazer a imagem aumentar quando passar o mouse*/
+.perfil > a > img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sobre > p {
+  font-size: 20px;
+  max-width: 80%;
+  text-align: center;
+}
+.information {
+  display: flex;
+  flex-direction: block;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10em;
+}
+/*estilização da segunda página*/
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin-top: 2em;
+}
+
+.projects > a > img {
+  border-radius: 20px;
+  height: 220px;
+  object-fit: contain;
+  box-shadow: 2px 2px 2px 1px #ff9a3c;
+}
+
+.projects > a > img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.projects > a {
+  height: 200px;
+  width: 100%;
+}
+/*estilização da terceira página*/
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+}
+.contato > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 4em;
+}
+.contato > form > label {
+  font-family: "Merriweather Sans";
+  font-weight: 300;
+  font-size: 20px;
+}
+.enviar {
+  margin-top: 1em;
+  width: 8em;
+  height: 2em;
+  font-family: "Merriweather Sans";
+}
+#mensagem {
+  width: 30em;
+  height: 10em;
+  resize: none;
+}
+#nome {
+  width: 30em;
+  height: 2em;
+}
+#email {
+  width: 30em;
+  height: 2em;
+}
